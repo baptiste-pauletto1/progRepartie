@@ -27,7 +27,7 @@ int main() {
 
 	sockaddr_serveur.sin_family = AF_INET;
 	sockaddr_serveur.sin_port = htons(NUM_PORT);
-	inet_aton("10.203.9.209",&sockaddr_serveur.sin_addr);
+	sockaddr_serveur.sin_addr.s_addr = htonl(INADDR_ANY);
 
 	int yes = 1;
 	if (setsockopt(sock_serveur, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int))

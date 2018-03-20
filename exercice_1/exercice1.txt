@@ -1,6 +1,0 @@
-1) Adresse IP : 0.0.0.0 INADDR_ANY on peut le contacter aussi via notre interface eth0
-Numéro de port : 50013
-
-5) On est pas root, il nous est donc interdit d'attribuer des ports parmi ceux réservés.
-
-

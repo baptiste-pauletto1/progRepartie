@@ -1,0 +1,19 @@
+Exercice 1 : Réponses au question de l'exercice 1 du TP2 disponible sur Ametice
+ 
+- SOCK_DGRAM dans l'installation du socket, elle précise que l’on est en UDP, il n’y a pas de connect() ou accept() soit pas de connexion.
+
+- Oui, voir le schéma recopié en cours.
+
+- Port passé en paramètre et il écoute sur toutes ses interfaces réseau (adresse wildcard avec INADDR_ANY).
+
+- Avec recvfrom, qui est une fonction bloquante jusqu’à la réception d’un message.
+
+- Avec la fonction recvfrom() qui renvoie l'adresse du client.
+
+- Dans sendto() pour envoyer la réponse au bon client (reçu par recvfrom()).
+
+- Il renvoie à la source, toutes les données qu’il reçoit.
+
+- Non on peut pas, si le message est trop long, il sera alors tronqué. Le risque avec udp, qui n’est pas un protocole fiable est la perte de données.
+
+
